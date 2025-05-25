@@ -1,0 +1,47 @@
+{
+  "name": "Raj Agrawal",
+  "role": "Full Stack Developer",
+  "about": [
+    "I'm a passionate developer with experience in building full-stack applications.",
+    "My journey in web development started with a curiosity for creating beautiful and functional websites.",
+    "I specialize in JavaScript/TypeScript, React, Node.js, and modern web technologies. I'm always learning and exploring new technologies to stay at the forefront of web development."
+  ],
+  "education": {
+    "school": "Your University",
+    "degree": "Bachelor's in Computer Science",
+    "years": "2019-2023"
+  },
+  "skills": [
+    { "title": "Frontend", "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+    { "title": "Backend", "skills": ["Node.js", "Express", "PostgreSQL", "MongoDB"] },
+    { "title": "Tools & Others", "skills": ["Git", "Docker", "AWS", "Figma"] }
+  ],
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "A full-stack web application built with Next.js and Node.js",
+      "details": "This project features authentication, a REST API, and a beautiful UI. It is deployed on Vercel and uses PostgreSQL for data storage.",
+      "tech": ["Next.js", "Node.js", "PostgreSQL", "Vercel"],
+      "link": "#"
+    },
+    {
+      "title": "Project 2",
+      "description": "Mobile-first responsive website with modern animations",
+      "details": "Built with React and Tailwind CSS, this site is fully responsive and features smooth animations and accessibility best practices.",
+      "tech": ["React", "Tailwind CSS", "Framer Motion"],
+      "link": "#"
+    },
+    {
+      "title": "Project 3",
+      "description": "Real-time chat application using WebSocket",
+      "details": "A chat app with real-time messaging, user presence, and emoji support. Built with Node.js, WebSocket, and MongoDB.",
+      "tech": ["Node.js", "WebSocket", "MongoDB"],
+      "link": "#"
+    }
+  ],
+  "contact": {
+    "github": "https://github.com/rajagrawal",
+    "linkedin": "https://linkedin.com/in/rajagrawal",
+    "email": "rajagrawal@example.com"
+  }
+} 
