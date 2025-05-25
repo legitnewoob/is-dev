@@ -11,6 +11,33 @@ const NAV_LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
+type UserData = {
+  name: string;
+  role: string;
+  about: string[];
+  education: {
+    school: string;
+    degree: string;
+    years: string;
+  };
+  skills: {
+    title: string;
+    skills: string[];
+  }[];
+  projects: {
+    title: string;
+    tech: string[];
+    description: string;
+    details: string;
+    link: string;
+  }[];
+  contact: {
+    github: string;
+    linkedin: string;
+    email: string;
+  };
+};
+
 function Section({ id, className, children }: { id?: string; className?: string; children: React.ReactNode }) {
   return (
     <section
@@ -47,7 +74,7 @@ function ScrollProgressBar() {
 }
 
 export default function Home() {
-  const [userData, setUserData] = useState<any>(null);
+  const [userData, setUserData] = useState<UserData | null>(null);
   const [open, setOpen] = useState<number | null>(null);
 
   useEffect(() => {
@@ -145,7 +172,7 @@ export default function Home() {
           <div className="container">
             <h2 className="text-center text-3xl font-bold md:text-4xl">Skills</h2>
             <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {userData.skills.map((category: any) => (
+              {userData.skills.map((category) => (
                 <div
                   key={category.title}
                   className="rounded-xl bg-white/80 dark:bg-gray-800/80 p-6 shadow-md border border-gray-100 dark:border-gray-800 hover:shadow-lg transition"
@@ -171,7 +198,7 @@ export default function Home() {
           <div className="container">
             <h2 className="text-center text-3xl font-bold md:text-4xl">Projects</h2>
             <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {userData.projects.map((project: any, idx: number) => (
+              {userData.projects.map((project, idx) => (
                 <div
                   key={project.title}
                   className={clsx(
